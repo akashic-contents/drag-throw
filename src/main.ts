@@ -94,7 +94,7 @@ const floorParameter: RectParameterObject = {
 function main(): void {
 	const scene = new g.Scene({ game: g.game });
 
-	scene.onLoad.add(function() {
+	scene.onLoad.add(() => {
 		// 左の壁を生成する
 	  const leftWall = createRect(scene, wallParameter);
 		// ※ box2dの座標は実距離（単位はメートル）で指定する
