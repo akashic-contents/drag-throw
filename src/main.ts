@@ -96,7 +96,7 @@ function main(): void {
 
 	scene.onLoad.add(() => {
 		// 左の壁を生成する
-	  const leftWall = createRect(scene, wallParameter);
+		const leftWall = createRect(scene, wallParameter);
 		// ※ box2dの座標は実距離（単位はメートル）で指定する
 	  const leftWallPos = physics.vec2(0, 0);
 		// ※ 指定された座標はオブジェクトの中心座標に設定される
